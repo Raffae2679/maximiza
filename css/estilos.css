@@ -1,3 +1,27 @@
+
+/* FONTES */
+
+@font-face {
+  font-family: 'Poppins-bold';
+  src: url('../fonts/Poppins-Bold.ttf');
+}
+
+
+@font-face {
+  font-family: 'Montserrat-regular';
+  src: url('../fonts/Montserrat-regular.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat-light';
+  src: url('../fonts/Montserrat-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Medium.ttf');
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -62,7 +86,7 @@ body {
 
 .brandmd {
   display: inline !important;
-}
+} 
 
 .navbar a {
   color: #fcfcfc !important;
@@ -120,9 +144,7 @@ body {
 }
 
 .ctatexto {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Poppins-bold';
   font-size: 50px;
   line-height: 75px;
   align-items: center;
@@ -132,11 +154,16 @@ body {
   text-shadow: 0px 4px 250px rgba(0, 0, 0, 0.25);
 }
 
+@media only screen and (max-width: 1000px) {
+  .ctatexto {
+    margin-top: -100px;
+    font-size: 40px;
+  }
+}
+
 .ctabotao {
   margin-top: 1%;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
+  font-family: 'Montserrat-light';
   font-size: 25px;
   line-height: 30px;
   display: flex;
@@ -146,11 +173,11 @@ body {
   text-transform: uppercase;
   color: #fcfcfc;
   background: #76787b !important;
-  box-shadow: 0px 4px 250px #000000;
   border-radius: 15px;
   padding: 3% 10%;
   display: inline-block;
   text-decoration: none !important;
+  box-shadow: 0px 4px 20px #000000;
 }
 
 .ctabotao:hover,
@@ -180,6 +207,10 @@ body {
   justify-content: center;
 }
 
+.main-form input{
+  color: #f2f2f2 ;
+}
+
 .main-form input::placeholder,
 .main-form select {
   color: #828282;
@@ -200,6 +231,12 @@ body {
   border-bottom: 3px solid #f2f2f2 !important;
 }
 
+@media only screen and (max-width: 1100px) {
+  .form-serv {
+        margin-top: -45px;
+  }
+}
+
 .main-form-titulo {
   font-family: Montserrat;
   font-style: normal;
@@ -210,6 +247,13 @@ body {
   color: #f2f2f2;
   padding: 45px 35px 55px;
   text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1100px) {
+  .main-form-titulo h3{
+    font-size: 18px;
+    padding: 3px 10px 3px 10px; 
+  }
 }
 
 .main-form input,
@@ -261,6 +305,20 @@ body {
   border: none;
   margin: 0% 18%;
   position: relative;
+}
+
+@media only screen and (max-width: 1100px) {
+  #proposta-btn {
+    font-size: 14px;
+    margin: -20px 15px 10px 15px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  #proposta-btn {
+    font-size: 14px;
+    margin: -20px 15px 10px 15px;
+  }
 }
 
 #inicio input.input.nomeform {
@@ -396,8 +454,16 @@ body {
   letter-spacing: 1.35px;
   text-transform: uppercase;
   color: #fcfcfc;
-  margin: 45px 0 30px;
+  margin: 28px 0 5px;
 }
+
+
+@media only screen and (max-width: 700px) {
+  .quemsomos-info h3 {
+    font-size: 30px !important;
+  }
+}
+
 
 /* SERVIÇOS */
 .servicos {
@@ -423,7 +489,7 @@ body {
 }
 
 .stitulo {
-  padding-bottom: 56px;
+  padding-bottom: 36px;
   padding-top: 58px;
   font-family: Montserrat;
   font-style: normal;
@@ -435,6 +501,12 @@ body {
   text-transform: uppercase;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: #333333;
+}
+
+@media only screen and (max-width: 700px) {
+  .servicos .stitulo {
+    font-size: 40px;
+  }
 }
 
 .servicos .stitulo {
@@ -454,7 +526,11 @@ body {
   margin-left: 35px;
 }
 
-
+@media only screen and (max-width: 1000px) {
+  .servicos-bdesc {
+    font-size: 16px;
+  }
+}
 
 .servico-card {
   position: relative;
@@ -462,6 +538,15 @@ body {
   margin: 0 -15px;
   -webkit-clip-path: polygon(0 0, 82% 0, 100% 100%, 20% 100%);
   clip-path: polygon(0 0, 82% 0, 100% 100%, 20% 100%);
+}
+
+@media only screen and (max-width: 700px) {
+  .servico-card img {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.55);
+  }
+  .servico-card:hover img{
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.65);
+  }
 }
 
 .servico-card h4 {
@@ -477,6 +562,13 @@ body {
   text-align: center;
   letter-spacing: 1.35px;
   color: #595959;
+}
+
+@media only screen and (max-width: 1000px) {
+  .servico-card h4 {
+    padding-right: 20px;
+    font-size: 14px;
+  }
 }
 
 .servico-card img {
@@ -563,8 +655,8 @@ body {
 }
 
 .modal-titulo {
-  margin-top: 100px;
-  margin-bottom: 75px;
+  margin-top: 50px;
+  margin-bottom: 25px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
@@ -611,7 +703,7 @@ body {
 /* PORTFÓLIO */
 #portfolio {
   background: #fcfcfc;
-  margin-top: -25px;
+  margin-top: 35px;
   margin-bottom: -10px;
   /* width: 100vw;
   height: 90vh; */
@@ -690,12 +782,12 @@ body {
 
 .slick-dots button {
   font-size: 0;
-  border: 8px solid #979797;
+  border: 3px solid #979797;
   background: #979797;
 }
 
 .slick-dots li.slick-active button {
-  border: 8px solid #303b68;
+  border:3px solid #303b68;
   background: #303b68;
 }
 
@@ -708,12 +800,43 @@ body {
 .clientes-container {
   margin-top: 100px !important;
   padding-bottom: 100px !important;
-  width: 100vw;
-  margin: 0 auto;
+  width: 100%;
+  margin: -100 auto;
+}
+.slick-list {
+  margin-left: -60px !important;
+}
+@media only screen and (max-width: 700px) {
+  .slick-list {
+    margin-left: -25px !important;
+  }
+  .clientes-container {
+    padding-left: 25px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .slick-list {
+    margin-left: 0px !important;
+    padding: 0px 10px !important;
+  }
+  .clientes-container {
+    padding-left: 23px;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .slick-list {
+    margin-left: -25px !important;
+    padding: 0px 10px !important;
+  }
+  .clientes-container {
+    padding-left: 23px;
+  }
 }
 
 .slider {
-  width: 95vw;
+  width: 90vw;
   margin: 0 auto;
   padding: 0 5%;
 }
@@ -935,10 +1058,15 @@ body {
 }
 
 .f-sociais {
+  margin-top: -60px;
   grid-area: sociais;
   padding-left: 50px;
 }
-
+@media (max-width: 790px) {
+  .f-sociais {
+    margin-top: 0px;
+  }
+}
 .f-sociais a {
   grid-area: sociais;
   padding-left: 33px;
@@ -983,6 +1111,7 @@ body {
   }
 
   .cta {
+    margin-left: 0px;
     text-align: center;
     top: 25vh !important;
     padding: 0 !important;
@@ -990,9 +1119,10 @@ body {
 
   .ctatexto {
     font-size: 38px;
-    margin: 10px 40px 135px;
+    margin: 10px 40px 50px ;
     line-height: 3rem;
     text-align: justify;
+    text-shadow: 4px 4px 8px #000;
   }
 
   .ctabotao {
@@ -1006,7 +1136,11 @@ body {
     font-size: 55px;
     letter-spacing: 0px;
   }
-
+  @media only screen and (max-width: 700px) {
+    .stitulo {
+      font-size: 40px;
+    }
+  }
   #navbarResponsive {
     background: #333952;
   }
@@ -1104,6 +1238,7 @@ body {
     margin-bottom: 40px !important;
   }
 
+
   .portfolio-desc h1 {
     align-items: center;
     text-align: center;
@@ -1112,6 +1247,27 @@ body {
 
   .portfolio-desc h1 span {
     font-size: 3.5rem;
+  }
+
+  @media only screen and (max-width: 769px) {
+    .portfolio-desc h1 span {
+      font-size: 35px;
+    }
+    .portfolio-desc p {
+      font-size: 16px;
+      padding: 0px 15px !important;
+      margin-bottom: 40px !important;
+  }
+  }
+
+  @media (max-width: 700px) {
+    .portfolio-desc h1 span {
+      font-size: 35px;
+    }
+    .portfolio-desc p {
+      margin-left: 30px;
+      padding: 0px 50px !important;
+    }
   }
 
   #contato .stitulo {
@@ -1161,6 +1317,7 @@ body {
   }
 
   .servicosCards {
+  
     transform: translateX(0%);
   }
 
@@ -1208,18 +1365,59 @@ body {
   }
 
   .modal-titulo {
-    margin: 0;
+    margin-bottom: 10px !important;
     font-size: 3rem;
     margin-left: -15px;
     margin-top: 40px;
     padding: 0;
   }
-
+  @media only screen and (max-width: 1000px) {
+    .modal-titulo {
+      margin-top: 20px;
+      margin-bottom: 25px;
+      font-size: 45px;
+    }
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .modal-titulo {
+      margin-top: 10px;
+      margin-bottom: 15px;
+      font-size: 35px;
+    }
+  }
+  @media only screen and (max-width:321px) {
+    .modal-titulo {
+      font-size: 30px;
+    }
+  }
   .servico-bdescIn {
     margin-top: 40px;
-    padding-right: 110px !important;
-    margin-left: -15px;
+    padding-right: 140px !important;
+    margin-left: -12px !important;
     text-align: justify;
+  }
+
+  @media only screen and (max-width: 769px) {
+    .servico-bdescIn {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+  }
+  }
+
+  @media (max-width: 700px) {
+    .servico-bdescIn{
+      font-size: 18px;
+      padding-right: 140px !important;
+    margin-left: -12px !important;
+    }
+  }
+  @media (max-width: 321px) {
+    .servico-bdescIn{
+      font-size: 16px;
+      padding-right: 95px !important;
+      margin-left: -12px !important;
+    }
   }
 
   .slick-dots li.slick-active button {
@@ -1236,3 +1434,4 @@ body {
   width: 100%;
   height: 100%;
 }
+
