@@ -30,7 +30,9 @@ clip-path: polygon(0 0, 0% 100%, 100% 100%);
 .conteudo {
     position: absolute;
     height: 100vh;
-    margin: 21px 155px 115px;
+    padding-top: 10px;
+    margin-left: 115px;
+    margin-right: 115px;
 }
 
 .erro {
@@ -52,7 +54,7 @@ clip-path: polygon(0 0, 0% 100%, 100% 100%);
 }
 
 .mensagem {
-    margin-top: 60% !important;
+    margin-top: 50% !important;
     align-items: center;
     text-align: center;
 }
@@ -123,6 +125,31 @@ clip-path: polygon(0 0, 0% 100%, 100% 100%);
 }
 
 /* MEDIA QUERIES */
+@media (max-width: 1000px) {
+    .conteudo {
+        padding: 20px;
+        margin: 0;
+    }
+
+    .search-cont input {
+        width: 92%;
+    }
+
+    .erro {
+
+        left: 80% !important;
+
+
+    }
+
+    .erro h1 {
+        font-size: 200px;
+        line-height: normal;
+
+    }
+
+
+}
 
 @media (max-width: 600px) {
     .conteudo {
